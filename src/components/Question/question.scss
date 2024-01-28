@@ -1,0 +1,138 @@
+.question-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+   // width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-left: 0%;
+    background-color: transparent;
+    border-radius: 7%;
+
+    p {
+        font-family: 'DynaPuff', cursive;
+        font-size: 40px;
+        color: black;
+    }
+
+    button {
+        margin-top: -20px;
+        margin-bottom: 5%;
+        padding: 15px;
+        background-color: white;
+        border-radius: 20px;
+        font-size: 15px;
+        max-width: 150px;
+
+    }
+
+    button:hover {
+        background-color: rgb(2, 223, 39, 0.5);
+    }
+
+    & &_question {
+        text-align: center;
+        margin-bottom: 0px;
+
+        p {
+            font-size: 30px;
+        }
+    }
+
+    & &_answers {
+        display: flex;
+        align-self: center;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+
+        button {
+            margin: 5px;
+            font-size: 25px;
+            width: 100%;
+            max-width: none;
+        }
+    }
+}
+
+
+@media screen and (min-width: 481px) {
+    .question-container {
+       // max-width: 95%;
+        align-self: center;
+        background-color: rgba(180, 7, 7, 0.6);
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .question-container {
+
+        height: 500px;
+        justify-content: center;
+
+        & &_question {
+            margin-bottom: 0px;
+        }
+
+        & &_answers {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 0px;
+
+            button {
+                margin: 5px;
+                font-size: 20px;
+                max-width: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .question-container {
+        height: 30%;
+
+        p {
+            font-size: 40px;
+        }
+
+        button {
+            margin-bottom: 15%;
+            padding: 15px;
+        }
+
+        button:hover {
+            background-color: rgb(2, 223, 39, 0.5);
+        }
+
+        & &_question {
+            text-align: center;
+
+            p {
+                font-size: 40px;
+            }
+        }
+
+        & &_answers {
+            display: flex;
+            flex-direction: row;
+            align-self: center;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            width: 80%;
+
+            button {
+                min-height: 80px;
+                width: max-content;
+                font-size: 25px;
+                max-width: 250px;
+                padding: 15px;
+                margin-bottom: 5%;
+                margin-top: -20px;
+            }
+        }
+    }
+}

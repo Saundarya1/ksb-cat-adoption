@@ -1,0 +1,120 @@
+.close-cat-swiper {
+    .swiper {
+        width: 500px;
+        height: 300px;
+        margin-top: 10px;
+    }
+
+    .close-cat-swiper-img {
+        img {
+            max-height: 100px;
+            max-width: 130px;
+            border-radius: 18px;
+        }
+    }
+
+    .close-cat-swiper-traits {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .close-cat-swiper-url {
+        font-size: 15px;
+        margin-bottom: 15px;
+
+        a {
+            color: white;
+        }
+    }
+
+    .swiper-slide {
+        min-height: 190px;
+        height: max-content;
+    }
+
+    @media screen and (min-width: 400px) {
+        .swiper {
+            margin-top: 25px;
+        }
+
+        .swiper-slide {
+            min-height: 215px;
+        }
+
+        .close-cat-swiper-img {
+            img {
+                max-height: 120px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 500px) and (orientation: portrait) {
+        .swiper-slide {
+            min-height: 250px;
+        }
+
+        .close-cat-swiper-img {
+            img {
+                max-height: 140px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 700px) and (orientation: portrait) {
+
+        .swiper,
+        .swiper-wrapper {
+            height: max-content;
+            width: 600px;
+        }
+
+        .swiper-slide {
+            min-height: 340px;
+            max-height: max-content;
+            min-width: 200px;
+
+            .close-cat-swiper-name {
+                font-size: 26px;
+            }
+        }
+
+        .close-cat-swiper-img {
+            img {
+                max-height: 230px;
+                max-width: 190px;
+            }
+        }
+
+        .close-cat-swiper-props {
+            font-size: 20px;
+        }
+    }
+
+    @media screen and (min-width: 900px) and (orientation: landscape) {
+
+        .swiper {
+            margin-top: 10px;
+        }
+
+        .swiper-slide {
+            min-height: 260px;
+            max-height: max-content;
+            min-width: 200px;
+
+            .close-cat-swiper-name {
+                font-size: 20px;
+            }
+        }
+
+        .close-cat-swiper-img {
+            img {
+                max-height: 180px;
+                max-width: 190px;
+            }
+        }
+
+        .close-cat-swiper-props {
+            font-size: 16px;
+        }
+    }
+}
