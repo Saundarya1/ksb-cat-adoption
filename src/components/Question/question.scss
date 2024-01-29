@@ -135,3 +135,26 @@
         }
     }
 }
+
+@media screen and (min-width: 1800px) {
+    .question-container {
+
+        max-width: 800px;
+
+        & &_question {
+            p {
+                font-size: 60px;
+            }
+        }
+
+        & &_answers {
+            button {
+                min-height: 140px;
+                max-width: 400px;
+                font-size: 35px;
+            }
+        }
+    }
+
+
+}

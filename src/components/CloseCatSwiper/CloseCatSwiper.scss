@@ -85,7 +85,7 @@
             }
         }
 
-        .close-cat-swiper-props {
+        .close-cat-swiper-traits {
             font-size: 20px;
         }
     }
@@ -113,8 +113,41 @@
             }
         }
 
-        .close-cat-swiper-props {
+        .close-cat-swiper-traits {
             font-size: 16px;
         }
+    }
+
+    @media screen and (min-width: 1800px){
+        .swiper {
+            margin-top: 30px;
+            height: max-content;
+            width: 800px;
+        }
+
+        .swiper-slide {
+            min-height: 400px;
+            max-height: max-content;
+            min-width: 300px;
+
+            .close-cat-swiper-name {
+                font-size: 40px;
+            }
+        }
+
+        .close-cat-swiper-img {
+            img {
+                max-height: 270px;
+                max-width: 260px;
+            }
+        }
+
+        .close-cat-swiper-traits {
+            font-size: 25px;
+        }
+    }
+
+    .close-cat-swiper-url {
+        font-size: 25px;
     }
 }

@@ -190,3 +190,35 @@
     border-radius: 7%;
   }
 }
+
+@media screen and (min-width: 1800px){
+  .no-cats-alert{
+    font-size: 30px;
+    width: 800px;
+  }
+
+  .swiper {
+    height: 650px;
+    width: 500px;
+  }
+
+  .cat-swiper-img {
+    img {
+      max-height: 480px;
+      max-width: 95%;
+    }
+  }
+
+  .swiper-content {
+
+    .cat-swiper-name {
+      font-size: 60px;
+      margin-top: 10px;
+    }
+
+    .cat-swiper-url {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+  }
+}
